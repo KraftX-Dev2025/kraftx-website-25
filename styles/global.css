@@ -1,0 +1,127 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@layer base {
+  :root {
+    /* Navy - primary text and backgrounds */
+    --primary: 214 30% 26%;
+    --primary-foreground: 0 0% 100%;
+    
+    /* Teal - secondary elements and accents */
+    --secondary: 202 23% 45%;
+    --secondary-foreground: 0 0% 100%;
+    
+    /* Beige - background */
+    --background: 26 36% 94%;
+    --foreground: 214 30% 26%;
+    
+    /* Sky Blue - accent elements */
+    --accent: 208 50% 84%;
+    --accent-foreground: 214 30% 26%;
+    
+    /* White - cards and text on dark backgrounds */
+    --card: 0 0% 100%;
+    --card-foreground: 214 30% 26%;
+    
+    --popover: 0 0% 100%;
+    --popover-foreground: 214 30% 26%;
+    
+    --muted: 214 15% 86%;
+    --muted-foreground: 214 20% 40%;
+    
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    
+    --border: 210 20% 80%;
+    --input: 210 20% 80%;
+    --ring: 214 30% 26%;
+    
+    --chart-1: 214 30% 26%;
+    --chart-2: 202 23% 45%;
+    --chart-3: 208 50% 84%;
+    --chart-4: 26 36% 84%;
+    --chart-5: 0 0% 100%;
+    
+    --radius: 0.5rem;
+    
+    --sidebar-background: 26 36% 94%;
+    --sidebar-foreground: 214 30% 26%;
+    --sidebar-primary: 214 30% 26%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 208 50% 84%;
+    --sidebar-accent-foreground: 214 30% 26%;
+    --sidebar-border: 210 20% 80%;
+    --sidebar-ring: 202 23% 45%;
+  }
+  
+  .dark {
+    /* Navy - primary text and backgrounds (inverted) */
+    --background: 214 30% 26%;
+    --foreground: 0 0% 100%;
+    
+    /* Teal - secondary elements and accents */
+    --secondary: 202 23% 45%;
+    --secondary-foreground: 0 0% 100%;
+    
+    /* White as primary in dark mode */
+    --primary: 0 0% 100%;
+    --primary-foreground: 214 30% 26%;
+    
+    /* Sky Blue - accent elements */
+    --accent: 208 50% 84%;
+    --accent-foreground: 214 30% 26%;
+    
+    /* Darker Navy for cards */
+    --card: 214 30% 20%;
+    --card-foreground: 0 0% 100%;
+    
+    --popover: 214 30% 20%;
+    --popover-foreground: 0 0% 100%;
+    
+    --muted: 214 20% 35%;
+    --muted-foreground: 210 20% 80%;
+    
+    --destructive: 0 62% 30%;
+    --destructive-foreground: 0 0% 100%;
+    
+    --border: 214 20% 35%;
+    --input: 214 20% 35%;
+    --ring: 208 50% 84%;
+    
+    --chart-1: 0 0% 100%;
+    --chart-2: 208 50% 84%;
+    --chart-3: 202 23% 45%;
+    --chart-4: 26 36% 70%;
+    --chart-5: 214 30% 35%;
+    
+    --sidebar-background: 214 30% 20%;
+    --sidebar-foreground: 0 0% 100%;
+    --sidebar-primary: 208 50% 84%;
+    --sidebar-primary-foreground: 214 30% 26%;
+    --sidebar-accent: 214 20% 35%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 214 20% 35%;
+    --sidebar-ring: 208 50% 84%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
